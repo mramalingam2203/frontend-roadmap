@@ -1,5 +1,5 @@
-    const apiKey = 'YOUR_OPENAI_API_KEY'; // Replace with your OpenAI API key
-
+    const apiKey = "sk-8lLzuPtAGeE4qYaRRHI5h1224x_D0f860jYSXbbKxzT3BlbkFJKsb3ezti_urBZrSsg6VJo4MuFAOgIwBdq-csfMmn8A";
+    
 async function sendMessage() {
     const inputField = document.getElementById('user-input');
     const userMessage = inputField.value;
