@@ -1,4 +1,4 @@
-const apiKey = "sk-8lLzuPtAGeE4qYaRRHI5h1224x_D0f860jYSXbbKxzT3BlbkFJKsb3ezti_urBZrSsg6VJo4MuFAOgIwBdq-csfMmn8A";
+const apiKey = "";
 var OPENAI_API_KEY = "";
 var bTextToSpeechSupported = false;
 var bSpeechInProgress = false;
