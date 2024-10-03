@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<title>
+</title>
+
+<head> 
+    <link rel="stylesheet" href="./css/styles.css">
+    <h3> Try to answer all questions and become a champion quizzie! </h3>
+    <script>
+        function fetchJSONData() {
+            fetch("./sample.json")
+                .then((res) => {
+                    if (!res.ok) {
+                        throw new Error
+                            (`HTTP error! Status: ${res.status}`);
+                    }
+                    return res.json();
+                })
+                .then((data) =>
+                    console.log(data))
+                .catch((error) =>
+                    console.error("Unable to fetch data:", error));
+        }
+        fetchJSONData();
+    </script>
+    
+</head>
+<body> 
+    
+</body>
