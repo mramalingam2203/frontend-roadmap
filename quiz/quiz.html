@@ -1,32 +1,15 @@
 <!DOCTYPE html>
-
-<title>
-</title>
-
-<script type="text/javascript" src="./script.js"></script>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <h3> Try to answer all questions and become a champion quizzie! </h3>
-    <script>
-        function fetchJSONData() {
-            fetch("./sample.json")
-                .then((res) => {
-                    if (!res.ok) {
-                        throw new Error
-                            (`HTTP error! Status: ${res.status}`);
-                    }
-                    return res.json();
-                })
-                .then((data) =>
-                    console.log(data))
-                .catch((error) =>
-                    console.error("Unable to fetch data:", error));
-        }
-        fetchJSONData();
-    </script>
-    
+    <title>Quiz Questions</title>
 </head>
-<body> 
-    
+<body>
+    <h1>Quiz</h1>
+    <div id="quiz-container"></div> <!-- Container to display quiz questions -->
+
+    <script src="script.js"></script>
 </body>
+</html>
