@@ -8,44 +8,11 @@ body {
 }
 
 .container {
-    background: rgb(169, 41, 41);
+    background: rgb(173, 187, 50);
     padding: 10px;
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(96, 12, 12, 0.1);
-    width: 400px;
+    box-shadow: 0 0 10px rgba(127, 210, 115, 0.87);
+    width: 200px;
 }
 
-table, th, td {
-    border: 10px solid;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: large;
-  }
 
-
-input[type="text"] { 
-    padding: 3px 3px; 
-    font-size: 20px; 
-    font-weight: bold; 
-}
-
-input[type="button"] { 
-    background-color: #171817; /* Green */
-    border: none;
-    color: rgb(171, 89, 89);
-    padding: 10px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 25px;
-    font-weight: bold;
-} 
-
-input[type="text"] { 
-    padding: 20px 20px; 
-    font-size: 24px; 
-    font-weight: bold; 
-    border: none; 
-    border-radius: 5px; 
-    border: 2px solid black; 
-} 	

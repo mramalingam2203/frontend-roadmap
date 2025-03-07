@@ -1,7 +1,8 @@
 
 // Function that display value 
 function dis(val) { 
-	document.getElementById("result").value += val 
+	document.getElementById("result").value += val;
+	if (val == 'AC') document.getElementById("result") = 0
 } 
 
 function myFunction(event) { 
