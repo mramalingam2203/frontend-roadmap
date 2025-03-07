@@ -11,8 +11,10 @@
     
     <div>
         <script src = "./script.js"> </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js" integrity="sha512-B82WLflI1EQiR9sGbIV1ddGVvK4ghj1xjMShL7YvcOrHjX2qP72lHztT1DxBVPiz1aTR6mOUJbtwj06uadL2GA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <table>
+
+    <table id="calcu>
         <tr> 
             <td colspan="3"><input type="text" id="result"></td> 
         </tr> 
@@ -39,11 +41,11 @@
         <tr>
             <td><input type="button" value="*" onclick="dis('*')" onkeydown="myFunction(event)"> </td> 
             <td><input type="button" value="/" onclick="dis('/')" onkeydown="myFunction(event)"> </td> 
-            <td><input type="button" value="AC" onclick="dis('0')" onkeydown="myFunction(event)"> </td> 
+            <td><input type="button" value="AC" onclick="clr()" onkeydown="myFunction(event)"> </td> 
         </tr>
         <tr>
             <td><input type="button" value="." onclick="dis('.')" onkeydown="myFunction(event)"> </td> 
-            <td><input type="button" value="=" onclick="dis('=')" onkeydown="myFunction(event)"> </td> 
+            <td><input type="button" value="=" onclick="solve()" onkeydown="myFunction(event)"> </td> 
             <td><input type="button" value="" onclick="dis('')" onkeydown="myFunction(event)"> </td> 
         </tr>
       </table> 
