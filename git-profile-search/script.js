@@ -1,4 +1,3 @@
-
 let api = "https://api.github.com/users/";
 
 let searchInput = document.getElementById("search-input");
@@ -10,6 +9,7 @@ searchButton.addEventListener("click", () => {
     .then(response => response.json())
     .then(data => {
         console.log(data);
+        displayProfile(data);
     })
 })
 
@@ -34,13 +34,20 @@ searchInput.addEventListener("blur", () => {
 displayProfile = (data) => {
     let profileContainer = document.querySelector(".profile-container");
     profileContainer.innerHTML = `
-    <div class="profile">  
-    <img src="${data.avatar_url}" alt="Profile Picture">
-    <h2>${data.name}</h2>
-    <h3>${data.bio}</h3>
-    <h3>${data.location}</h3>
-    <h3>${data.followers}</h3>
+    <div class="profile">
+        <img src="${data.avatar_url}" alt="Profile Picture">
+        <div class="user-info">
+            <h2>${data.name || data.login}</h2>
+            <p>${data.bio || 'No bio available'}</p>
+            <div class="stats">
+                <p>Followers: ${data.followers}</p>
+                <p>Following: ${data.following}</p>
+                <p>Repositories: ${data.public_repos}</p>
+            </div>
+            <a href="${data.html_url}" target="_blank">View Profile</a>
+        </div>
     </div>
-    `
+    `;
 }
+
 
