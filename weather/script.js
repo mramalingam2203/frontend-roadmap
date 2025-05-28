@@ -25,12 +25,17 @@
                     <p><b>Sunrise:</b> ${new Date(data.sys.sunrise * 1000).toLocaleTimeString()}</p>
                     <p><b>Sunset:</b> ${new Date(data.sys.sunset * 1000).toLocaleTimeString()}</p>
                     <p><b>Coordinates:</b> ${data.coord.lat}, ${data.coord.lon}</p>
-
                 `;
             } catch (error) {
                 document.getElementById("weatherInfo").innerHTML = `<p>Error fetching data</p>`;
             }
+
+            const bbox = `${encodeURIComponent(minLon)},${encodeURIComponent(minLat)},${encodeURIComponent(maxLon)},${encodeURIComponent(maxLat)}`;
+            const mapSrc = `src="https://www.openstreetmap.org/export/embed.html?bbox=${bbox}&amp;layer=mapnik"`;
+            document.getElementById("osmMap").src = mapSrc;
+        
         }
+
 
 
 
