@@ -6,13 +6,31 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Weather App</title>
 </head>
+  <h2>WEATHER on GLOBE</h2>
+<script src="script.js"></script>
+
 <body>
     <div class="container">
-        <script src="script.js"></script>
-        <h2>Weather App</h2>
+      
         <input type="text" id="cityInput" placeholder="Enter city name">
         <button onclick="getWeather()">Get Weather</button>
-        <div class="weather-info" id="weatherInfo"></div>
+        
+           
+        <div style="width: 100%;">
+        <div style="float:left; width: 50%">
+             <div class="weather-info" id="winfo-1"></div> 
+            <div class="error-message" id="errorMessage"></div>
+        </div>
+        <div style="float:right;">
+<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+src="https://www.openstreetmap.org/export/embed.html?bbox=-62.04673002474011%2C16.95487694424327%2C-61.60521696321666%2C17.196751341562923&amp;layer=mapnik" 
+style="border: 1px solid black"></iframe>
+<br/><small><a href="https://www.openstreetmap.org/#map=12/17.0759/-61.8260">View Larger Map</a></small>
+
+        </div>
+        </div>
+        <div style="clear:both"></div>
+        
     </div>
 
     <script>
