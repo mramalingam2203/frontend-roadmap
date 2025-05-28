@@ -9,6 +9,7 @@ function addTask() {
     let taskList = document.getElementById("taskList");
     let li = document.createElement("li");
     li.innerHTML = `${taskText} <button onclick="removeTask(this)">❌</button>`;
+    
     li.onclick = () => li.classList.toggle("completed");
     
     taskList.appendChild(li);
