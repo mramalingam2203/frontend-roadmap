@@ -14,9 +14,24 @@
     <header>
         <div class="logo">
             <h1> <img src="./images/logo.png" alt="NEONUMERICS Logo" style="float: left; margin: 0 15px 10px 0; width: 120px; height: auto;"> NEONUMERICS
+            <br> </br>
+            <h2>Fluids · Numerics · AI</h2>
+
             </h1>
         </div>
-        <h2>Fluids · Numerics · AI</h2>
+
+<div class="nav-menu">
+    <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+    <ul class="dropdown">
+        <li><a href="/viz.html">Viz.</a></li>
+        <li><a href="/demos.html">Demos</a></li>
+        <li><a href="/pricing.html">Pricing</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/techstack.html">Tech Stack</a></li>
+    </ul>
+</div>
     </header>
     <section>
         <h2>About Us</h2>
@@ -38,9 +53,7 @@
                 <div class="card-content">
                     <p style="overflow: hidden;">
                         <img src="./images/vision.png" alt="Vision Image" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;">
-                        <strong>Our vision</strong> is to be a leading provider of innovative CFD solutions, transforming industries through cutting-edge simulations and data analytics.
-                    To offer niche R & D to the industry in CFD and numerical computing, empowering industries with innovative solutions that drive efficiency and sustainability.
-                    We envision a future where advanced simulations and data-driven insights are accessible to all, enabling smarter decisions and better designs.
+                        <strong>Our vision</strong> is to be a leading provider of innovative CFD solutions, transforming industries through cutting-edge simulations and data analytics. To offer niche R & D to the industry in CFD and numerical computing, empowering industries with innovative solutions that drive efficiency and sustainability. We envision a future where advanced simulations and data-driven insights are accessible to all, enabling smarter decisions and better designs.
                     </p>
                 </div>
 
@@ -53,30 +66,33 @@
             <div class="card" onclick="toggleContent(this)">
                 <h3>CFD Consultation</h3>
                 <div class="card-toggle-indicator">▶</div>
-                <div class="card-content">                    
+                <div class="card-content">
                     <p style="overflow: hidden;">
-                    <img src="./images/consult.png" alt="Consult Image" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;">
-                    <strong>CFD consulting</strong> is the main core of our business. </p>
+                        <img src="./images/consult.png" alt="Consult Image" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;">
+                        <strong>CFD consulting</strong> is the main core of our business. NEONUMERICS offers expert CFD consulting to solve complex flow challenges with precision. We optimize designs, reduce costs, and accelerate development using advanced simulations and data-driven models. From aerospace to energy, our deep expertise delivers actionable insights and performance gains. Partner with us to transform your engineering with fluid intelligence.
+
+                    </p>
                 </div>
             </div>
             <div class="card" onclick="toggleContent(this)">
                 <h3>CFD Products</h3>
                 <div class="card-toggle-indicator">▶</div>
-                <div class="card-content">                    
+                <div class="card-content">
                     <p style="overflow: hidden;">
-                    <img src="./images/consult.png" alt="Consult Image" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;">
-                    <strong>CFD consulting</strong> is the main core of our business. </p>
+                        <img src="./images/cfdprod.png" alt="Prod Image" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;">
+                        <strong>CFD consulting</strong> is the main core of our business. </p>
                 </div>
             </div>
             <div class="card" onclick="toggleContent(this)">
                 <h3>Data-driven Flow Computing</h3>
                 <div class="card-toggle-indicator">▶</div>
-                <div class="card-content">                    
+                <div class="card-content">
                     <p style="overflow: hidden;">
-                    <img src="./images/consult.png" alt="Consult Image" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;">
-                    <strong>CFD consulting</strong> is the main core of our business. </p>
+                        <img src="./images/datadriv.png" alt="Consult Image" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;">
+                        <strong>CFD consulting</strong> is the main core of our business. </p>
                 </div>
-            </div>            <div class="card" onclick="toggleContent(this)">
+            </div>
+            <div class="card" onclick="toggleContent(this)">
                 <h3>Radiation Transport Simulation</h3>
                 <div class="card-content">Modeling coupled radiation and flow physics for high-fidelity simulations in energy systems.</div>
             </div>
@@ -205,7 +221,14 @@
           indicator.style.opacity = expanded ? '0' : '1';
         }
     </script>
+ <script>
+    const toggleButton = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
 
+    toggleButton.addEventListener('click', () => {
+        navMenu.classList.toggle('open');
+    });
+</script>
 </body>
 
 </html>

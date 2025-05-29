@@ -5,10 +5,70 @@
       color: #f1f1f1;
     }
     header {
-      background-color: #1f1f1f;
-      padding: 20px;
-      text-align: center;
+      position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
     }
+
+/* Dropdown menu container */
+.nav-menu {
+    position: absolute;
+    color: #00ffcc;
+    top: 20px;
+    right: 30px;
+}
+
+/* Menu button */
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #00ffcc; /* Match header color or use #fff if on dark background */
+    cursor: pointer;
+}
+
+/* Dropdown menu items */
+.dropdown {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    background-color: #f9f9f9; /* Match your page background color */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+/* Individual links */
+.dropdown li {
+    margin: 5px 0;
+}
+
+.dropdown li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.dropdown li a:hover {
+    background-color: #e0e0e0;
+}
+
+/* Toggle show */
+.nav-menu.open .dropdown {
+    display: block;
+}
+
+
     header h1 {
       margin: 0;
       font-size: 4.5em;
@@ -33,6 +93,8 @@
     h2 {
       color: #00ffcc;
       margin-bottom: 10px;
+      font-size: 2.0em;
+      text-align: left;
     }
     .about-section {
   display: flex;
