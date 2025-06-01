@@ -34,7 +34,7 @@
     list-style: none;
     margin: 0;
     padding: 10px;
-    background-color: #f9f9f9; /* Match your page background color */
+    background-color: #00ffcc; /* Match your page background color */
     border: 1px solid #ccc;
     border-radius: 8px;
     position: absolute;
@@ -53,7 +53,9 @@
 .dropdown li a {
     text-decoration: none;
     color: #333;
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: block;
     padding: 5px 10px;
     border-radius: 4px;
@@ -182,4 +184,26 @@ p {
 
 .social-links a:hover {
   color: #ffffff;
+}
+
+
+#scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  font-size: 2rem;
+  background-color: #00ffcc;
+  color: black;
+  fill: black;
+  border: black;
+  fill-opacity: 40%;
+  border-radius: 50%;
+  padding: 12px 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+}
+#scrollToTop:hover {
+  background-color: #f0fc0e;
 }
