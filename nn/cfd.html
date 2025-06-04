@@ -25,10 +25,11 @@
         <i class="fas fa-bars"></i>
     </button>
     <ul class="dropdown">
-        <li><a href="/demos.html">Demos</a></li>
-        <li><a href="/pricing.html">Pricing</a></li>
-        <li><a href="/blog.html">Blog</a></li>
-        <li><a href="/techstack.html">Training</a></li>
+        <li><a href="#">Demos</a></li>
+        <li><a href="./pricing.html">Pricing</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="./pricing.html">Training</a></li>
+        <li><a href="#">AIgentSmith</a></li>        
     </ul>
 </div>
     </header>
@@ -57,7 +58,26 @@
                 </div>
 
             </div>
+
     </section>
+
+    <section>
+
+    <div> <h3> To save clicking efforts please toggle </h3> </div>
+        <hr style="border: none; height: 1px; background-color:  #00ffcc;">
+
+    <!-- Toggle Wrapper -->
+        <div class="toggle-wrapper">
+          <label class="switch">
+            <input type="checkbox" id="toggleAll" onchange="toggleAllCards(this)">
+            <span class="slider"></span>
+          </label>
+          <span class="label-text">Expand All</span>
+        </div>
+            <hr style="border: none; height: 1px; background-color:  #00ffcc;">
+
+    </div>      
+
 
     <section>
         <h2>Our Offers</h2>
@@ -373,6 +393,107 @@
             </div>
         </div>
     </section>
+
+
+    <section>
+        <h2>Data-Driven Simulations(PINN)</h2>
+        <div class="grid">
+            <div class="card" onclick="toggleContent(this)">
+                <h3>Custom GPU Acceleration of Legacy Code</h3>
+                                <div class="card-toggle-indicator">></div>
+
+                <div class="card-content"><p style="overflow: hidden;"><img src="./images/mesh.jpg" alt="reactor" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;">We help migrate and accelerate existing CPU-based software to run efficiently on GPUs. This service targets engineering firms, financial institutions, and medical imaging companies needing faster simulations or analytics without complete rewrites.
+
+</p>
+
+</div>
+            </div>
+            <div class="card" onclick="toggleContent(this)">
+                <h3>High-Speed Image and Video Processing</h3>
+                                <div class="card-toggle-indicator">></div>
+
+                <div class="card-content"><p style="overflow: hidden;"><img src="./images/multiphase.png" alt="reactor" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;">We offer GPU-accelerated solutions for real-time image recognition, video enhancement, and object detection using OpenCL/CUDA—ideal for surveillance, autonomous systems, and industrial quality control.
+
+</p>
+
+</div>
+            </div>
+            <div class="card" onclick="toggleContent(this)">
+                <h3>Computational Fluid Dynamics (CFD) Acceleration</h3>
+                                                <div class="card-toggle-indicator">></div>
+
+                <div class="card-content"><p style="overflow: hidden;"><img src="./images/turb.png" alt="reactor" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;">We develop GPU-parallelized solvers or integrate CUDA kernels in CFD tools to drastically reduce simulation runtimes. Valuable for aerospace, automotive, and HVAC industries performing complex turbulence and multiphase flow modeling.
+
+</p>
+
+</div>
+            </div>
+            <div class="card" onclick="toggleContent(this)">
+                <h3>Real-Time Signal Processing for Embedded Systems</h3>
+                                                <div class="card-toggle-indicator">></div>
+
+                <div class="card-content"> <p style="overflow: hidden;"><img src="./images/servers.png" alt="reactor" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;"> We design GPU-accelerated pipelines for radar, sonar, or IoT signal analysis. This supports defense, medical devices, and smart manufacturing sectors with strict latency and throughput requirements.
+
+</p>
+
+</div>
+            </div>
+            <div class="card" onclick="toggleContent(this)">
+                <h3>AI/ML Model Training and Inference Pipelines</h3>
+                                                <div class="card-toggle-indicator">></div>
+
+                <div class="card-content"> <p style="overflow: hidden;"><img src="./images/parametrics.jpg" alt="reactor" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;">We provide optimized CUDA kernels for deep learning frameworks (e.g., PyTorch, TensorFlow) or custom OpenCL solutions for edge devices. Serve clients in fintech, healthtech, or robotics needing faster model performance.
+
+</p>
+
+</div>
+            </div>
+            <div class="card" onclick="toggleContent(this)">
+                <h3>GPU-Based Monte Carlo Simulations</h3>
+                                                <div class="card-toggle-indicator">></div>
+
+                <div class="card-content"> <p style="overflow: hidden;"><img src="./images/visualz.jpg" alt="reactor" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;"> We help accelerate probabilistic modeling and risk analysis using CUDA/OpenCL for industries like insurance, nuclear physics, and financial derivatives that rely heavily on Monte Carlo methods.
+
+
+
+</p>
+
+</div>
+            </div>
+            <div class="card" onclick="toggleContent(this)">
+                <h3> Medical Image Reconstruction and Segmentation</h3>
+                                                <div class="card-toggle-indicator">></div>
+
+                <div class="card-content"> <p style="overflow: hidden;"><img src="./images/custom.jpg" alt="reactor" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;"> We offer real-time GPU-powered 3D reconstruction and segmentation for MRI/CT data using CUDA. Hospitals and medtech companies can integrate this for diagnostic speed and precision.
+
+ </p>
+
+</div>
+            </div>
+          
+            <div class="card" onclick="toggleContent(this)">
+                <h3>Cryptography and Blockchain Optimization</h3>
+                                                <div class="card-toggle-indicator">></div>
+
+                <div class="card-content"><p style="overflow: hidden;"><img src="./images/of.png" alt="reactor" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;">We develop high-throughput CUDA/OpenCL implementations for cryptographic hashing, encryption, or smart contract verification. Useful for fintech and cybersecurity clients needing secure, low-latency systems.
+
+</p>
+
+</div>
+            </div>
+            <div class="card" onclick="toggleContent(this)">
+                <h3>High-Resolution Scientific Visualization</h3>
+                                                <div class="card-toggle-indicator">></div>
+
+                <div class="card-content"> <p style="overflow: hidden;"><img src="./images/remote-support.webp" alt="reactor" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;">We create real-time, interactive visualizations of large scientific datasets using GPU rendering—beneficial to geosciences, bioinformatics, and materials science teams managing terabyte-scale simulations or scans.
+
+ </p>
+
+</div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <p>Contact us:
             <a href="mailto:info@neonumerics.com">info@neonumerics.com</a> | Phone: +65-9645-0882
@@ -414,6 +535,41 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 </script>
+
+<script>
+function toggleContent(cardElement) {
+  const content = cardElement.querySelector('.card-content');
+  const indicator = cardElement.querySelector('.card-toggle-indicator');
+
+  if (content.style.display === 'none' || content.style.display === '') {
+    content.style.display = 'block';
+    if (indicator) indicator.textContent = '˅';
+  } else {
+    content.style.display = 'none';
+    if (indicator) indicator.textContent = '>';
+  }
+}
+
+function toggleAllCards(toggleSwitch) {
+  const isChecked = toggleSwitch.checked;
+  const allCards = document.querySelectorAll('.card');
+
+  allCards.forEach(card => {
+    const content = card.querySelector('.card-content');
+    const indicator = card.querySelector('.card-toggle-indicator');
+
+    if (isChecked) {
+      content.style.display = 'block';
+      if (indicator) indicator.textContent = '˅';
+    } else {
+      content.style.display = 'none';
+      if (indicator) indicator.textContent = '>';
+    }
+  });
+}
+</script>
+
+
 
 </body>
 
