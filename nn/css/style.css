@@ -6,8 +6,10 @@
     }
     header {
       position: relative;
+      background-color: #11223F;
   padding: 20px;
   display: flex;
+
   justify-content: space-between;
   align-items: center;
     }
@@ -78,6 +80,7 @@
     }
     .logo {
       display: flex;
+
       align-items: center;
       justify-content: center;
       gap: 10px;
@@ -160,7 +163,7 @@ p {
       font-size: 0.9em;
     }
     footer {
-      background-color: #1a1a1a;
+      background-color: #1C396B;
       text-align: center;
       padding: 20px;
       font-size: 0.9em;
@@ -261,3 +264,78 @@ input:checked + .slider::before {
   font-size: 16px;
   font-weight: 500;
 }
+
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 2rem 0;
+    background-color: #0f0f0f;
+    color: #e0e0e0;
+  }
+
+  .carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: max-content;
+  }
+
+  .carousel-card {
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    padding: 1rem;
+    min-width: 50%;
+  }
+
+  .card {
+    background: #1a1a1a;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    height: 100%;
+  }
+
+  .card h3 {
+    margin-top: 0;
+  }
+
+  .card img {
+    float: left;
+    margin: 0 15px 10px 0;
+    width: 100px;
+    height: auto;
+  }
+
+  .carousel-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+
+  .carousel-arrow {
+    pointer-events: auto;
+    font-size: 2rem;
+    background: #333;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+  }
+
+  .carousel-arrow:hover {
+    background: #555;
+  }
+
+  @media (max-width: 768px) {
+    .carousel-card {
+      flex: 0 0 100%;
+      min-width: 100%;
+    }
+  }

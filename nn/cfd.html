@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header>
+    <header class = "header">
         <div class="logo">
             <h1> <img src="./images/logo.png" alt="NEONUMERICS Logo" style="float: left; margin: 0 15px 10px 0; width: 120px; height: auto;"> NEONUMERICS
             <br> </br>
@@ -399,60 +399,60 @@
         <h2>Data-Driven Simulations(PINN)</h2>
         <div class="grid">
             <div class="card" onclick="toggleContent(this)">
-                <h3>Custom GPU Acceleration of Legacy Code</h3>
+                <h3>Flow Simulation Around an Airfoil (Navier-Stokes with PINNs)</h3>
                                 <div class="card-toggle-indicator">></div>
 
-                <div class="card-content"><p style="overflow: hidden;"><img src="./images/mesh.jpg" alt="reactor" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;">We help migrate and accelerate existing CPU-based software to run efficiently on GPUs. This service targets engineering firms, financial institutions, and medical imaging companies needing faster simulations or analytics without complete rewrites.
+                <div class="card-content"><p style="overflow: hidden;"><img src="./images/mesh.jpg" alt="reactor" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;">We have developed a Physics-Informed Neural Network (PINN) that learns to solve the Navier-Stokes equations governing incompressible fluid flow around an airfoil. By embedding physical laws into the learning process, this model can predict steady-state flow fields with significantly fewer data points and faster inference times than traditional solvers.Real-time optimization scenarios—ideal for aerospace companies and drone startups.
 
 </p>
 
 </div>
             </div>
             <div class="card" onclick="toggleContent(this)">
-                <h3>High-Speed Image and Video Processing</h3>
+                <h3> Thermal Conductivity in Composite Materials</h3>
                                 <div class="card-toggle-indicator">></div>
 
-                <div class="card-content"><p style="overflow: hidden;"><img src="./images/multiphase.png" alt="reactor" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;">We offer GPU-accelerated solutions for real-time image recognition, video enhancement, and object detection using OpenCL/CUDA—ideal for surveillance, autonomous systems, and industrial quality control.
+                <div class="card-content"><p style="overflow: hidden;"><img src="./images/multiphase.png" alt="reactor" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;">We created a PINN that models thermal conductivity across heterogeneous composite materials by solving the heat equation using known boundary conditions and sparse temperature measurements. Unlike traditional FEA tools that require dense meshing and high computation, my PINN generalizes well across material interfaces and handles discontinuities with ease. It’s a compelling use case for industries focused on advanced manufacturing, chip design, or thermal shielding in high-performance systems.
 
 </p>
 
 </div>
             </div>
             <div class="card" onclick="toggleContent(this)">
-                <h3>Computational Fluid Dynamics (CFD) Acceleration</h3>
+                <h3>Tsunami Simulation with Shallow Water Equations</h3>
                                                 <div class="card-toggle-indicator">></div>
 
-                <div class="card-content"><p style="overflow: hidden;"><img src="./images/turb.png" alt="reactor" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;">We develop GPU-parallelized solvers or integrate CUDA kernels in CFD tools to drastically reduce simulation runtimes. Valuable for aerospace, automotive, and HVAC industries performing complex turbulence and multiphase flow modeling.
+                <div class="card-content"><p style="overflow: hidden;"><img src="./images/turb.png" alt="reactor" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;">We have developed a model that learns the shallow water equations governing wave propagation, particularly in coastal environments with variable bathymetry. Our PINN integrates both observational data and physical constraints, allowing it to simulate tsunami behavior faster than traditional numerical solvers. This model can be deployed in edge devices for early warning systems or integrated with geospatial APIs for disaster planning and has immediate relevance for governments, climate resilience agencies, and NGOs involved in hazard mitigation.
 
 </p>
 
 </div>
             </div>
             <div class="card" onclick="toggleContent(this)">
-                <h3>Real-Time Signal Processing for Embedded Systems</h3>
+                <h3>Groundwater Pollution Modeling</h3>
                                                 <div class="card-toggle-indicator">></div>
 
-                <div class="card-content"> <p style="overflow: hidden;"><img src="./images/servers.png" alt="reactor" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;"> We design GPU-accelerated pipelines for radar, sonar, or IoT signal analysis. This supports defense, medical devices, and smart manufacturing sectors with strict latency and throughput requirements.
+                <div class="card-content"> <p style="overflow: hidden;"><img src="./images/servers.png" alt="reactor" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;"> Our PINN solves the advection-diffusion equation for groundwater pollution, integrating sparse sensor readings with physical models to interpolate and forecast contaminant concentrations in 3D space. This enables environmental consultants and agencies to map subsurface pollution with far fewer field samples. Compared to traditional geostatistical methods or grid-based solvers, this approach offers faster convergence and adaptive modeling capabilities. It’s particularly useful in regulatory reporting, remediation planning, and risk assessment for industries like mining, waste management, and construction.
 
 </p>
 
 </div>
             </div>
             <div class="card" onclick="toggleContent(this)">
-                <h3>AI/ML Model Training and Inference Pipelines</h3>
+                <h3>Battery Degradation & Thermal Runaway Prediction</h3>
                                                 <div class="card-toggle-indicator">></div>
 
-                <div class="card-content"> <p style="overflow: hidden;"><img src="./images/parametrics.jpg" alt="reactor" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;">We provide optimized CUDA kernels for deep learning frameworks (e.g., PyTorch, TensorFlow) or custom OpenCL solutions for edge devices. Serve clients in fintech, healthtech, or robotics needing faster model performance.
+                <div class="card-content"> <p style="overflow: hidden;"><img src="./images/parametrics.jpg" alt="reactor" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;">Predicting battery behavior under stress is vital for electric vehicles and grid-scale storage systems. I built a PINN that models both thermal gradients and electrochemical degradation processes inside a lithium-ion cell. By solving coupled PDEs for heat transfer and chemical reaction rates, the model can predict scenarios leading to thermal runaway or capacity fade. Traditional BMS (Battery Management Systems) rely on empirical heuristics or expensive simulations, while my PINN provides physics-grounded, real-time forecasts with minimal data. This solution can inform smarter charge-discharge strategies, enable virtual testing of battery chemistries, and improve overall safety — ideal for automotive and energy storage companies.
 
 </p>
 
 </div>
             </div>
             <div class="card" onclick="toggleContent(this)">
-                <h3>GPU-Based Monte Carlo Simulations</h3>
+                <h3>Blood Flow Modeling in Arteries Using PINNs</h3>
                                                 <div class="card-toggle-indicator">></div>
 
-                <div class="card-content"> <p style="overflow: hidden;"><img src="./images/visualz.jpg" alt="reactor" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;"> We help accelerate probabilistic modeling and risk analysis using CUDA/OpenCL for industries like insurance, nuclear physics, and financial derivatives that rely heavily on Monte Carlo methods.
+                <div class="card-content"> <p style="overflow: hidden;"><img src="./images/visualz.jpg" alt="reactor" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;"> Medical imaging often captures patient-specific vascular structures, but simulating blood flow through these geometries is still limited to research labs. I created a PINN that solves the 2D and 3D Navier-Stokes equations tailored to arterial flow using real anatomical data. This model allows clinicians to simulate hemodynamic conditions in aneurysms or stenoses without resorting to mesh-heavy CFD tools. It can be integrated with CT or MRI data to provide personalized surgical planning, stent optimization, or diagnostic assessments. The potential applications in cardiovascular research, medical device companies, and personalized healthcare are immense, offering a blend of precision and speed not possible before.
 
 
 
@@ -461,31 +461,29 @@
 </div>
             </div>
             <div class="card" onclick="toggleContent(this)">
-                <h3> Medical Image Reconstruction and Segmentation</h3>
+                <h3> Atmospheric Climate Dynamics Modeling</h3>
                                                 <div class="card-toggle-indicator">></div>
 
-                <div class="card-content"> <p style="overflow: hidden;"><img src="./images/custom.jpg" alt="reactor" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;"> We offer real-time GPU-powered 3D reconstruction and segmentation for MRI/CT data using CUDA. Hospitals and medtech companies can integrate this for diagnostic speed and precision.
-
+                <div class="card-content"> <p style="overflow: hidden;"><img src="./images/custom.jpg" alt="reactor" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;"> Climate models are crucial for forecasting weather patterns, policy planning, and assessing environmental impact—but they’re computationally intensive and slow. I developed a PINN-based surrogate model that learns to solve simplified forms of the Navier-Stokes and thermodynamic equations used in atmospheric modeling. By embedding the governing PDEs into a neural network, the model achieves accurate, real-time climate predictions from sparse satellite data. This significantly reduces the computational burden of global climate models (GCMs), making it ideal for edge-deployed forecasting tools, NGO climate assessments, or rapid what-if simulations. This project showcases how physics-informed AI can democratize access to high-fidelity climate modeling.
  </p>
 
 </div>
             </div>
           
             <div class="card" onclick="toggleContent(this)">
-                <h3>Cryptography and Blockchain Optimization</h3>
+                <h3>Drug Diffusion Through Biological Tissues</h3>
                                                 <div class="card-toggle-indicator">></div>
 
-                <div class="card-content"><p style="overflow: hidden;"><img src="./images/of.png" alt="reactor" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;">We develop high-throughput CUDA/OpenCL implementations for cryptographic hashing, encryption, or smart contract verification. Useful for fintech and cybersecurity clients needing secure, low-latency systems.
-
+                <div class="card-content"><p style="overflow: hidden;"><img src="./images/of.png" alt="reactor" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;">Understanding how drugs diffuse through complex biological tissues is crucial in designing effective delivery mechanisms. I designed a PINN that solves the diffusion-reaction equations to simulate how a compound disperses through multi-layered biological environments (e.g., skin, muscle, tumors). This model can integrate sparse in vitro or in vivo measurements, allowing pharmaceutical companies to predict absorption rates and optimize dosage. Unlike Monte Carlo or mesh-based simulation tools, this PINN learns a continuous solution and adapts quickly to different tissue profiles. It can accelerate drug development, reduce lab testing, and pave the way for more personalized pharmacokinetics simulations.
 </p>
 
 </div>
             </div>
             <div class="card" onclick="toggleContent(this)">
-                <h3>High-Resolution Scientific Visualization</h3>
+                <h3>Structural Stress & Deformation in Mechanical Parts</h3>
                                                 <div class="card-toggle-indicator">></div>
 
-                <div class="card-content"> <p style="overflow: hidden;"><img src="./images/remote-support.webp" alt="reactor" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;">We create real-time, interactive visualizations of large scientific datasets using GPU rendering—beneficial to geosciences, bioinformatics, and materials science teams managing terabyte-scale simulations or scans.
+                <div class="card-content"> <p style="overflow: hidden;"><img src="./images/remote-support.webp" alt="reactor" style="float: left; margin: 0 15px 10px 0; width: 100px; height: auto;">Finite element analysis (FEA) is standard in structural engineering, but it’s slow, expensive, and non-differentiable—limiting its use in real-time optimization. I built a PINN that solves the elastostatic equations to model stress and deformation in beams, plates, and mechanical assemblies. With just boundary load data and geometry, the network learns accurate stress distributions, supporting rapid design iteration in manufacturing and 3D printing. It’s ideal for smart factories and digital twin applications, where real-time simulation is needed for predictive maintenance or generative design. This project demonstrates how PINNs can complement or even replace legacy FEA tools in industrial settings.
 
  </p>
 
