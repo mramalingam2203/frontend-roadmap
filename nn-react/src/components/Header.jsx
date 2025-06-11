@@ -7,9 +7,9 @@ export default function Header() {
       </div>
       <nav className="space-x-6 text-gray-300 text-sm">
         <a href="#home" className="hover:text-neon">HOME</a>
-        <a href="#pricing" className="hover:text-neon">PRICING</a>
-        <a href="#about" className="hover:text-neon">ABOUT US</a>
-        <a href="#contact" className="hover:text-neon">CONTACT US</a>
+        <a href="#domains" className="hover:text-neon">DOMAINS</a>
+        <a href="#cfdservices" className="hover:text-neon">CFD SERVICES</a>
+        <a href="#cfdproducts" className="hover:text-neon">CFD PRODUCTS</a>
         <a href="#techstack" className="hover:text-neon">TECH STACK</a>
       </nav>
     </header>
