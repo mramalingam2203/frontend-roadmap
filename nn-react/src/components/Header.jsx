@@ -5,12 +5,13 @@ export default function Header() {
         <img src="/logo.png" alt="neonumerics logo" className="h-10" />
         <span className="text-xl font-bold text-neon">NEONUMERICS</span>
       </div>
-      <nav className="space-x-6 text-gray-300 text-sm">
-        <a href="#home" className="hover:text-neon">HOME</a>
-        <a href="#domains" className="hover:text-neon">DOMAINS</a>
-        <a href="#cfdservices" className="hover:text-neon">CFD SERVICES</a>
-        <a href="#cfdproducts" className="hover:text-neon">CFD PRODUCTS</a>
-        <a href="#techstack" className="hover:text-neon">TECH STACK</a>
+      <nav className="space-x-6 text-gray-300 text-sm text-neon">
+        <a href="#home" className=" hover:font-bold hover:-translate-y-1 transition-all duration-200">HOME</a>
+        <a href="#domains" className="hover:font-bold hover:-translate-y-1 transition-all duration-200">DOMAINS</a>
+        <a href="#cfdprojects" className="hover:font-bold hover:-translate-y-1 transition-all duration-200">CFD PROJECTS</a>
+        <a href="#cfdservices" className="hover:font-bold hover:-translate-y-1 transition-all duration-200">CFD SERVICES</a>
+
+        <a href="#techstack" className="hover:font-bold hover:-translate-y-1 transition-all duration-200">TECH STACK</a>
       </nav>
     </header>
   );

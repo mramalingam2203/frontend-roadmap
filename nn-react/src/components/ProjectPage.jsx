@@ -72,19 +72,68 @@ const projects = [
 ];
 
 
-const products = [  
+const services = [  
   {
-    title: "Jet Engine Nozzle Optimization",
+    title: "Mesh generation and optimization",
     icon : "/products/nozzle.png",
     description:
-      "Optimize jet engine nozzle performance using AI-driven simulations. Our solution employs physics-informed neural networks (PINNs) to rapidly evaluate nozzle geometries, improving thrust, fuel efficiency, and thermal tolerance. Cut design cycles from weeks to hours while maintaining aerospace-grade precision—ideal for R&D teams in defense, aviation, and propulsion innovation.",
+      "High-quality meshes are the backbone of accurate CFD. We deliver automated and customized mesh generation workflows, optimizing grid quality, boundary resolution, and computational load—streamlining simulations for analysts and engineers across aerospace, automotive, and biomedical sectors.",
   },
   {
-    title: "HVAC airflow in smart buildings",
+    title: "Multiphase flow modeling",
         icon : "/products/hvac.png",
 
     description:
-      "Optimize HVAC airflow in smart buildings with AI-enhanced CFD models. Our solution uses physics-informed neural networks to simulate air circulation, temperature gradients, and ventilation efficiency in real-time. Reduce energy costs, improve occupant comfort, and adapt dynamically to building usage—perfect for facility managers and green building innovators.",  
+      "Simulate complex fluid interactions—gas-liquid, liquid-solid, or slurry flows—with robust multiphase CFD models. We address challenges in bubble columns, cavitation, sediment transport, and emulsions, helping clients in energy, biotech, and materials industries design and optimize critical processes.",  
+  },
+  {
+    title: "Multiphase flow modeling",
+        icon : "/products/hvac.png",
+
+    description:
+      "Simulate complex fluid interactions—gas-liquid, liquid-solid, or slurry flows—with robust multiphase CFD models. We address challenges in bubble columns, cavitation, sediment transport, and emulsions, helping clients in energy, biotech, and materials industries design and optimize critical processes.",  
+  },
+  {
+    title: "Multiphase flow modeling",
+        icon : "/products/hvac.png",
+
+    description:
+      "Simulate complex fluid interactions—gas-liquid, liquid-solid, or slurry flows—with robust multiphase CFD models. We address challenges in bubble columns, cavitation, sediment transport, and emulsions, helping clients in energy, biotech, and materials industries design and optimize critical processes.",  
+  },
+  {
+    title: "Multiphase flow modeling",
+        icon : "/products/hvac.png",
+
+    description:
+      "Simulate complex fluid interactions—gas-liquid, liquid-solid, or slurry flows—with robust multiphase CFD models. We address challenges in bubble columns, cavitation, sediment transport, and emulsions, helping clients in energy, biotech, and materials industries design and optimize critical processes.",  
+  },
+  {
+    title: "LES/DNS turbulence simulations",
+        icon : "/products/hvac.png",
+
+    description:
+      "Achieve high-fidelity turbulence resolution using LES and DNS techniques. Our services uncover unsteady flow structures and small-scale eddies, enabling deeper insights for research, combustion, and noise studies where RANS models fall short—ideal for advanced aero and fluid mechanics projects",  
+  },
+  {
+    title: "Multiphase flow modeling",
+        icon : "/products/hvac.png",
+
+    description:
+      "Simulate complex fluid interactions—gas-liquid, liquid-solid, or slurry flows—with robust multiphase CFD models. We address challenges in bubble columns, cavitation, sediment transport, and emulsions, helping clients in energy, biotech, and materials industries design and optimize critical processes.",  
+  },
+  {
+    title: "Multiphase flow modeling",
+        icon : "/products/hvac.png",
+
+    description:
+      "Simulate complex fluid interactions—gas-liquid, liquid-solid, or slurry flows—with robust multiphase CFD models. We address challenges in bubble columns, cavitation, sediment transport, and emulsions, helping clients in energy, biotech, and materials industries design and optimize critical processes.",  
+  },
+  {
+    title: "Multiphase flow modeling",
+        icon : "/products/hvac.png",
+
+    description:
+      "Simulate complex fluid interactions—gas-liquid, liquid-solid, or slurry flows—with robust multiphase CFD models. We address challenges in bubble columns, cavitation, sediment transport, and emulsions, helping clients in energy, biotech, and materials industries design and optimize critical processes.",  
   },
 
 ]; 
@@ -92,7 +141,7 @@ const products = [
 const ProjectPage = () => {
   return (
     <div className="projects-page px-6 py-10 text-white bg-dark">
-      <h1 className="page-title text-3xl font-bold text-center mb-8 text-neon" id = "cfdservices">CFD Services</h1>
+      <h1 className="page-title text-3xl font-bold text-center mb-8 text-neon" id = "cfdservices">CFD Projects</h1>
       
       <div className="project-grid grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, idx) => (
@@ -117,22 +166,22 @@ const ProjectPage = () => {
       
         <br></br>
 
-        <h1 className="page-title text-3xl font-bold text-center mb-8 text-neon"  id = "cfdproducts">CFD Products</h1>
+        <h1 className="page-title text-3xl font-bold text-center mb-8 text-neon"  id = "cfdproducts">CFD Services</h1>
       
       <div className="project-grid grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {products.map((product, idx) => (
+        {services.map((service, idx) => (
           <div key={idx} className="project-card bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-neon transition">
             <div className="project-content text-sm leading-relaxed">
               
-              <h2 className="project-title text-xl font-semibold mb-2 text-neon">{product.title}</h2>
+              <h2 className="project-title text-xl font-semibold mb-2 text-neon">{service.title}</h2>
               
               <p className="project-description text-gray-300">
                 <img
-                  src={product.icon}
-                  alt={product.title}
+                  src={service.icon}
+                  alt={service.title}
                   className="w-20 h-auto float-left mr-4 mb-2 rounded"
                 />
-                {product.description}
+                {service.description}
               </p>
 
             </div>
