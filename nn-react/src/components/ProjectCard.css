@@ -1,0 +1,53 @@
+.projects-page {
+  background-color: #0D1117;
+  color: #CFFF04;
+  padding: 50px 20px;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #CFFF04;
+}
+
+.project-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.project-card {
+  background-color: #161B22;
+  border: 1px solid #30363D;
+  border-radius: 12px;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 12px rgba(207, 255, 4, 0.05);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(207, 255, 4, 0.2);
+}
+
+.project-title {
+  font-size: 20px;
+  align-self: center;
+  margin-bottom: 10px;
+  color: #CFFF04;
+}
+
+.project-description {
+  font-size: 11px;
+  align-content: center;
+  color: #e6edf3;
+  margin-bottom: 12px;
+}
+
+.project-stack {
+  font-size: 10px;
+  color: #b8c4a2;
+}
