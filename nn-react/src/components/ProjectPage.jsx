@@ -75,68 +75,138 @@ const projects = [
 const services = [  
   {
     title: "Mesh generation and optimization",
-    icon : "/products/nozzle.png",
+    icon : "/products/mesh.jpg",
     description:
       "High-quality meshes are the backbone of accurate CFD. We deliver automated and customized mesh generation workflows, optimizing grid quality, boundary resolution, and computational load—streamlining simulations for analysts and engineers across aerospace, automotive, and biomedical sectors.",
   },
   {
     title: "Multiphase flow modeling",
-        icon : "/products/hvac.png",
-
-    description:
-      "Simulate complex fluid interactions—gas-liquid, liquid-solid, or slurry flows—with robust multiphase CFD models. We address challenges in bubble columns, cavitation, sediment transport, and emulsions, helping clients in energy, biotech, and materials industries design and optimize critical processes.",  
-  },
-  {
-    title: "Multiphase flow modeling",
-        icon : "/products/hvac.png",
-
-    description:
-      "Simulate complex fluid interactions—gas-liquid, liquid-solid, or slurry flows—with robust multiphase CFD models. We address challenges in bubble columns, cavitation, sediment transport, and emulsions, helping clients in energy, biotech, and materials industries design and optimize critical processes.",  
-  },
-  {
-    title: "Multiphase flow modeling",
-        icon : "/products/hvac.png",
-
-    description:
-      "Simulate complex fluid interactions—gas-liquid, liquid-solid, or slurry flows—with robust multiphase CFD models. We address challenges in bubble columns, cavitation, sediment transport, and emulsions, helping clients in energy, biotech, and materials industries design and optimize critical processes.",  
-  },
-  {
-    title: "Multiphase flow modeling",
-        icon : "/products/hvac.png",
+        icon : "/products/turb.png",
 
     description:
       "Simulate complex fluid interactions—gas-liquid, liquid-solid, or slurry flows—with robust multiphase CFD models. We address challenges in bubble columns, cavitation, sediment transport, and emulsions, helping clients in energy, biotech, and materials industries design and optimize critical processes.",  
   },
   {
     title: "LES/DNS turbulence simulations",
-        icon : "/products/hvac.png",
+        icon : "/products/processtank.png",
 
     description:
-      "Achieve high-fidelity turbulence resolution using LES and DNS techniques. Our services uncover unsteady flow structures and small-scale eddies, enabling deeper insights for research, combustion, and noise studies where RANS models fall short—ideal for advanced aero and fluid mechanics projects",  
+    "Achieve high-fidelity turbulence resolution using LES and DNS techniques. Our services uncover unsteady flow structures and small-scale eddies, enabling deeper insights for research, combustion, and noise studies where RANS models fall short—ideal for advanced aero and fluid mechanics projects",
   },
   {
-    title: "Multiphase flow modeling",
+    title: "HPC support",
         icon : "/products/hvac.png",
 
     description:
-      "Simulate complex fluid interactions—gas-liquid, liquid-solid, or slurry flows—with robust multiphase CFD models. We address challenges in bubble columns, cavitation, sediment transport, and emulsions, helping clients in energy, biotech, and materials industries design and optimize critical processes.",  
+      " Run large-scale CFD simulations efficiently with our HPC consulting. From cluster setup to solver parallelization and job scheduling, we ensure your CFD tools perform optimally on cloud or on-premise infrastructure—saving time and compute costs.",  
   },
   {
-    title: "Multiphase flow modeling",
-        icon : "/products/hvac.png",
+    title: "Parametric studies and DoE",
+        icon : "/products/experiment.jpg",
 
     description:
-      "Simulate complex fluid interactions—gas-liquid, liquid-solid, or slurry flows—with robust multiphase CFD models. We address challenges in bubble columns, cavitation, sediment transport, and emulsions, helping clients in energy, biotech, and materials industries design and optimize critical processes.",  
+      "Speed up design decisions with automated parametric sweeps and DoE-integrated CFD. We help you explore design space efficiently, identify key performance drivers, and support optimization workflows across industries—from aerospace to HVAC to manufacturing. ",  
   },
   {
-    title: "Multiphase flow modeling",
-        icon : "/products/hvac.png",
+    title: "Post-processing and visualization",
+        icon : "/products/visualz.jpg",
 
     description:
-      "Simulate complex fluid interactions—gas-liquid, liquid-solid, or slurry flows—with robust multiphase CFD models. We address challenges in bubble columns, cavitation, sediment transport, and emulsions, helping clients in energy, biotech, and materials industries design and optimize critical processes.",  
+      "Turn raw CFD data into actionable insights with advanced post-processing. We create customized plots, animations, and dashboards that highlight flow behavior, thermal hotspots, and stress zones—improving stakeholder communication and engineering decisions. ",  
+  },
+  {
+    title: "Software customization",
+        icon : "/products/servers.png",
+
+    description:
+      "Tailor your CFD tools to your workflow. From custom solvers and boundary conditions to UI automation and scripting, we modify OpenFOAM, ANSYS, or in-house codes to match your unique simulation needs—empowering your engineering teams with fit-for-purpose solutions.",  
+  },
+  {
+    title: "Validation and verification studies",
+        icon : "/products/validate.png",
+
+    description:
+      "Ensure simulation credibility with rigorous validation and verification workflows. We cross-check model fidelity against analytical, experimental, or benchmark data—delivering documented confidence in CFD results for regulatory approval, internal QA, or client delivery.",  
+  },
+  {
+    title: "Pre-configured OpenFOAM environments",
+        icon : "/products/of.png",
+
+    description:
+      "Get started with CFD instantly using our pre-packaged OpenFOAM environments. Optimized for performance and ease-of-use, our setups include solvers, tutorials, and automation tools—ideal for teams who want robust open-source CFD without the setup hassle. ",  
+  },
+   {
+    title: "Remote CFD team support",
+        icon : "/products/remote-support.webp",
+
+    description:
+      "Extend your CFD capabilities with our on-demand remote engineering team. From quick troubleshooting to full project delivery, we offer flexible collaboration, expert guidance, and responsive support—ideal for startups, research labs, and enterprises scaling CFD operations.",  
   },
 
 ]; 
+
+
+
+const hpc = [  
+  {
+    title: "Custom GPU Acceleration of Legacy Code",
+    icon : "/products/nozzle.png",
+    description:
+      "We help migrate and accelerate existing CPU-based software to run efficiently on GPUs. This service targets engineering firms, financial institutions, and medical imaging companies needing faster simulations or analytics without complete rewrites.",
+  },
+  {
+    title: "High-Speed Image and Video Processing",
+        icon : "/products/hvac.png",
+
+    description:
+      "We offer GPU-accelerated solutions for real-time image recognition, video enhancement, and object detection using OpenCL/CUDA—ideal for surveillance, autonomous systems, and industrial quality control.",  
+  },
+  {
+    title: "Computational Fluid Dynamics (CFD) Acceleration",
+        icon : "/products/hvac.png",
+
+    description:
+    "We develop GPU-parallelized solvers or integrate CUDA kernels in CFD tools to drastically reduce simulation runtimes. Valuable for aerospace, automotive, and HVAC industries performing complex turbulence and multiphase flow modeling.",
+  },
+  {
+    title: "Real-Time Signal Processing for Embedded Systems",
+        icon : "/products/hvac.png",
+
+    description:
+      "We design GPU-accelerated pipelines for radar, sonar, or IoT signal analysis. This supports defense, medical devices, and smart manufacturing sectors with strict latency and throughput requirements",  
+  },
+  {
+    title: "AI/ML Model Training and Inference Pipelines",
+        icon : "/products/hvac.png",
+
+    description:
+      "We provide optimized CUDA kernels for deep learning frameworks (e.g., PyTorch, TensorFlow) or custom OpenCL solutions for edge devices. Serve clients in fintech, healthtech, or robotics needing faster model performance",  
+  },
+  {
+    title: "GPU-Based Monte Carlo Simulations",
+        icon : "/products/hvac.png",
+
+    description:
+      "We help accelerate probabilistic modeling and risk analysis using CUDA/OpenCL for industries like insurance, nuclear physics, and financial derivatives that rely heavily on Monte Carlo methods.",  
+  },
+  {
+    title: "Medical Image Reconstruction and Segmentation",
+        icon : "/products/hvac.png",
+
+    description:
+      "We offer real-time GPU-powered 3D reconstruction and segmentation for MRI/CT data using CUDA. Hospitals and medtech companies can integrate this for diagnostic speed and precision.",  
+  },
+  {
+    title: "High-Resolution Scientific Visualization",
+        icon : "/products/hvac.png",
+
+    description:
+      "We create real-time, interactive visualizations of large scientific datasets using GPU rendering—beneficial to geosciences, bioinformatics, and materials science teams managing terabyte-scale simulations or scans.",  
+  },
+
+]; 
+
+
 
 const ProjectPage = () => {
   return (
@@ -188,6 +258,34 @@ const ProjectPage = () => {
           </div>
         ))}
       </div>
+
+              <br></br>
+
+        <h1 className="page-title text-3xl font-bold text-center mb-8 text-neon"  id = "cfdproducts">HPC Computation</h1>
+      
+      <div className="project-grid grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {hpc.map((service, idx) => (
+          <div key={idx} className="project-card bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-neon transition">
+            <div className="project-content text-sm leading-relaxed">
+              
+              <h2 className="project-title text-xl font-semibold mb-2 text-neon">{service.title}</h2>
+              
+              <p className="project-description text-gray-300">
+                <img
+                  src={service.icon}
+                  alt={service.title}
+                  className="w-20 h-auto float-left mr-4 mb-2 rounded"
+                />
+                {service.description}
+              </p>
+
+            </div>
+          </div>
+        ))}
+      </div>
+
+
+
     </div>
 
     
