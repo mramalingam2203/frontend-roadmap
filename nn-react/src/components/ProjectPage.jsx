@@ -151,55 +151,56 @@ const hpc = [
   {
     title: "Custom GPU Acceleration of Legacy Code",
     icon : "/products/nozzle.png",
+    tech : "OpenACC, CUDA Fortran, f2py, Kokkos",
     description:
       "We help migrate and accelerate existing CPU-based software to run efficiently on GPUs. This service targets engineering firms, financial institutions, and medical imaging companies needing faster simulations or analytics without complete rewrites.",
   },
   {
     title: "High-Speed Image and Video Processing",
-        icon : "/products/hvac.png",
-
+    icon : "/products/hvac.png",
+    tech : "OpenCV-CUDA, NPP, FFmpeg-CUDA, cuVID, NVENC/NVDEC",
     description:
       "We offer GPU-accelerated solutions for real-time image recognition, video enhancement, and object detection using OpenCL/CUDA—ideal for surveillance, autonomous systems, and industrial quality control.",  
   },
   {
     title: "Computational Fluid Dynamics (CFD) Acceleration",
-        icon : "/products/hvac.png",
-
+    icon : "/products/hvac.png",
+    tech : "OpenFOAM + CUDA, SU2 with GPU backends, PETSc-GPU, AMReX",
     description:
     "We develop GPU-parallelized solvers or integrate CUDA kernels in CFD tools to drastically reduce simulation runtimes. Valuable for aerospace, automotive, and HVAC industries performing complex turbulence and multiphase flow modeling.",
   },
   {
     title: "Real-Time Signal Processing for Embedded Systems",
-        icon : "/products/hvac.png",
-
+    icon : "/products/hvac.png",
+    tech : "CUDA C++, OpenCL, NVIDIA Jetson SDK, TensorRT, DeepStream",
     description:
       "We design GPU-accelerated pipelines for radar, sonar, or IoT signal analysis. This supports defense, medical devices, and smart manufacturing sectors with strict latency and throughput requirements",  
   },
   {
     title: "AI/ML Model Training and Inference Pipelines",
-        icon : "/products/hvac.png",
-
+    icon : "/products/hvac.png",
+    tech : "PyTorch, TensorFlow-GPU, ONNX Runtime, cuDNN, TensorRT",
     description:
       "We provide optimized CUDA kernels for deep learning frameworks (e.g., PyTorch, TensorFlow) or custom OpenCL solutions for edge devices. Serve clients in fintech, healthtech, or robotics needing faster model performance",  
   },
   {
     title: "GPU-Based Monte Carlo Simulations",
-        icon : "/products/hvac.png",
-
+    icon : "/products/hvac.png",
+    tech : "cuRAND, custom CUDA kernels, Thrust, MPI-GPU hybrid",
     description:
       "We help accelerate probabilistic modeling and risk analysis using CUDA/OpenCL for industries like insurance, nuclear physics, and financial derivatives that rely heavily on Monte Carlo methods.",  
   },
   {
     title: "Medical Image Reconstruction and Segmentation",
-        icon : "/products/hvac.png",
-
+    icon : "/products/hvac.png",
+    tech : "MONAI (GPU-based), TorchIO, ITK-GPU, 3D Slicer with VTK, DL + CUDA",
     description:
       "We offer real-time GPU-powered 3D reconstruction and segmentation for MRI/CT data using CUDA. Hospitals and medtech companies can integrate this for diagnostic speed and precision.",  
   },
   {
     title: "High-Resolution Scientific Visualization",
-        icon : "/products/hvac.png",
-
+    icon : "/products/hvac.png",
+    tech : "VTK, ParaView, NVIDIA IndeX, Vulkan, Three.js (WebGL)",
     description:
       "We create real-time, interactive visualizations of large scientific datasets using GPU rendering—beneficial to geosciences, bioinformatics, and materials science teams managing terabyte-scale simulations or scans.",  
   },
@@ -277,6 +278,11 @@ const ProjectPage = () => {
                   className="w-20 h-auto float-left mr-4 mb-2 rounded"
                 />
                 {service.description}
+                {service.tech && (
+                  <span className="text-gray-400 block mt-2">
+                    <strong>Tech Stack:</strong> {service.tech}
+                  </span>
+                )}
               </p>
 
             </div>

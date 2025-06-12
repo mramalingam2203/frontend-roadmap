@@ -5,6 +5,8 @@ import Blog from './pages/Blog';
 import AboutUs from "./components/AboutUs";
 import Header from "./components/Header";
 import ProjectPage from "./components/ProjectPage";
+import Footer from "./components/Footer";
+
 
 export default function App() {
   return (
@@ -20,17 +22,20 @@ export default function App() {
           NEONUMERICS
 
         </motion.h1 >
-       
-        <AboutUs />   
+
+<hr className="border-t-2 border-neon my-4 w-1/3 mx-auto" />
+
+
+        <AboutUs />
+
 
         <Services />
+<hr className="border-t-2 border-neon my-4 w-1/2 mx-auto" />
 
         <ProjectPage />
+<hr className="border-t-2 border-neon my-4 w-4/5 mx-auto" />
         
-        <footer className="text-center text-gray-400 mt-12">
-          <p>&copy; {new Date().getFullYear()} NEONUMERICS. All rights reserved.</p>
-          <p className="text-sm">Designed with passion and precision.</p>
-        </footer>
+        <Footer /> 
       </main>
     
     </div>

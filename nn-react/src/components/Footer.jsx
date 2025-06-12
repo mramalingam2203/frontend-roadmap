@@ -14,7 +14,7 @@ const Footer = () => (
       <a href="https://beebo.com" target="_blank" rel="noopener noreferrer"><MdGroup size={24} /></a>
       <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram size={24} /></a>
     </div>
-    <p className="footer-text">© {new Date().getFullYear()} AIgentSmith Inc. All rights reserved.</p>
+    <p className="footer-text">© {new Date().getFullYear()} NEONUMERICS Inc. All rights reserved.</p>
   </footer>
 );
 
