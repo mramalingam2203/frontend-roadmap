@@ -14,9 +14,12 @@ export default function Header() {
         <a href="#domains" className="hover:font-bold hover:-translate-y-1 transition-all duration-200">DOMAINS</a>
         <a href="#cfdprojects" className="hover:font-bold hover:-translate-y-1 transition-all duration-200">CFD PROJECTS</a>
         <a href="#cfdservices" className="hover:font-bold hover:-translate-y-1 transition-all duration-200">CFD SERVICES</a>
-        <a href="#cfdservices" className="hover:font-bold hover:-translate-y-1 transition-all duration-200">HPC SERVICES</a>
-        <a href="#cfdservices" className="hover:font-bold hover:-translate-y-1 transition-all duration-200">DATA-DRIVEN SIMULATIONS</a>
-        <a href="#techstack" className="hover:font-bold hover:-translate-y-1 transition-all duration-200">TECH STACK</a>
+        <a href="#hpcservices" className="hover:font-bold hover:-translate-y-1 transition-all duration-200">HPC SERVICES</a>
+        <a href="#pinnservices" className="hover:font-bold hover:-translate-y-1 transition-all duration-200">DATA-DRIVEN SIMULATIONS</a>
+        <a href="#techstack" className="hover:font-bold hover:-translate-y-1 transition-all duration-200">BLOG</a>
+        <a href="#techstack" className="hover:font-bold hover:-translate-y-1 transition-all duration-200">PRICING</a>
+        <a href="#techstack" className="hover:font-bold hover:-translate-y-1 transition-all duration-200">AIgentSmith</a>
+
       </nav>
     </header>
   );

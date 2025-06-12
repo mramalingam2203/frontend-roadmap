@@ -46,7 +46,7 @@ const services = [
 
 export default function Services() {
   return (
-    <div className="w-full flex flex-col bg-dark text-white px-4 py-6 text-lg">
+    <div className="w-full flex flex-col bg-dark text-white px-4 py-6 text-lg" id = "cfdservices">
       {/* Header Section */}
       <div className="mb-6">
         <h2 className="text-3xl text-center text-neon">Our Domains</h2>
@@ -56,7 +56,7 @@ export default function Services() {
       </div>
 
       {/* Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-lg gap-10">
         {services.map((service, idx) => (
           <motion.div
             key={idx}
@@ -64,7 +64,7 @@ export default function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: idx * 0.1 }}
-            className="bg-gray-900 p-5 rounded-xl shadow-md hover:shadow-neon transition w-full"
+            className="bg-gray-900 p-5 rounded-xl shadow-md hover:shadow-neon text-lg transition w-full"
           >
             <div className="flex items-start space-x-4">
               {/* Icon */}
@@ -78,8 +78,8 @@ export default function Services() {
 
               {/* Text */}
               <div>
-                <h3 className="text-base font-semibold text-neon">{service.title}</h3>
-                <p className="text-sm text-gray-300 mt-1">{service.description}</p>
+                <h3 className="text-base font-semibold text-neon text-lg">{service.title}</h3>
+                <p className="text-lg text-gray-300 mt-1">{service.description}</p>
               </div>
             </div>
           </motion.div>

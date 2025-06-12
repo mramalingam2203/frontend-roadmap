@@ -212,7 +212,7 @@ const hpc = [
 const ProjectPage = () => {
   return (
     <div className="projects-page px-6 py-10 text-white bg-dark">
-      <h1 className="page-title text-3xl font-bold text-center mb-8 text-neon" id = "cfdservices">CFD Projects</h1>
+      <h1 className="page-title text-3xl font-bold text-center mb-8 text-neon" id = "cfdprojects">CFD Projects</h1>
       
       <div className="project-grid grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, idx) => (
