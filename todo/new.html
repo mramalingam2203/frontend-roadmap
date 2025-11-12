@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>TO DO</h1>
+
+<div id="mainsection">
+  <div class="taskdiv">
+    <table>
+      <tr>
+        <td>
+          <input type="text" name="task" placeholder="Task name">
+          <input type="text" name="task" placeholder="Tag"> 
+          <input type="date" name="deadline">
+          <button type="button" class="addTask">+</button>
+          <button type="button" class="delTask">-</button>
+        </td>
+        <td>
+            <form>
+                <label for="status">Status</label>
+                <select id="status" name="fruits">
+                  <option value="inProgress">In Progress</option>
+                  <option value="notStarted">Not Started</option>
+                  <option value="Completed">Completed</option>
+                </select>
+              </form>
+        </td>
+      </tr>
+    
+    </table>
+  </div>
+</div>
+
+<script>
+document.addEventListener("click", function(e) {
+  if (e.target.classList.contains("addTask")) {
+    const section = e.target.closest(".taskdiv");
+    const clone = section.cloneNode(true);
+    document.getElementById("mainsection").appendChild(clone);
+  } else if (e.target.classList.contains("delTask")) {
+    const section = e.target.closest(".taskdiv");
+    if (document.querySelectorAll(".taskdiv").length > 1) {
+      section.remove();
+    }
+  }
+});
+</script>
+
+
+
+</body>
+</html>
