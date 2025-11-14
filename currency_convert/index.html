@@ -146,7 +146,7 @@
         <p class="lead">Pick any two currencies to convert</p>
         <div class="inputs">
           <div>
-            <select id="myDropdown" name="myOption">
+            <select id="dd1" name="option1">
               <option value="1">New Zealand,NZ,New Zealand Dollars,NZD</option>
               <option value="2">Cook Islands,CK,New Zealand Dollars,NZD</option>
               <option value="3">Niue,NU,New Zealand Dollars,NZD</option>
@@ -402,12 +402,12 @@
           <br>
           <p>
           <div>
-            <button id="interconvert" > &#x21B9 </button>
+            <button id="interconvert" onclick="swapOption()" > &#x21B9 </button>
           </div>
           </p>
           <br>
           <div>
-            <select id="myDropdown" name="myOption">
+            <select id="dd2" name="option2">
               <option value="1">New Zealand,NZ,New Zealand Dollars,NZD</option>
               <option value="2">Cook Islands,CK,New Zealand Dollars,NZD</option>
               <option value="3">Niue,NU,New Zealand Dollars,NZD</option>
@@ -660,8 +660,40 @@
               <option value="250">US Armed Forces,USAF,US Dollar,USD</option>
             </select>
           </div>
+
+            <div>
+            <button id="convert" onclick="#" > Convert </button>
+          </div>
+
         </div>
       </div>
     </div>
+
+
+<script>
+function swapOption() {
+    const listA = document.getElementById("dd1");
+    const listB = document.getElementById("dd2");
+
+    const selectedA = listA.options[listA.selectedIndex];
+    const selectedB = listB.options[listB.selectedIndex];
+
+    // If selection is in A → move to B
+    if (selectedA) {
+        listB.add(new Option(selectedA.text, selectedA.value));
+        listA.remove(listA.selectedIndex);
+        return;
+    }
+
+    // If selection is in B → move to A
+    if (selectedB) {
+        listA.add(new Option(selectedB.text, selectedB.value));
+        listB.remove(listB.selectedIndex);
+        return;
+    }
+
+    alert("Please select an option in either list.");
+}
+</script>
   </body>
 </html>
