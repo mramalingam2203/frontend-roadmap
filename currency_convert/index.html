@@ -401,9 +401,10 @@
           </div>
           <br>
           <p>
-          <div>
-            <button id="interconvert" onclick="swapOption()" > &#x21B9 </button>
+            <div>
+            <button id="convert" onclick="#" > Convert to </button>
           </div>
+
           </p>
           <br>
           <div>
@@ -661,10 +662,7 @@
             </select>
           </div>
 
-            <div>
-            <button id="convert" onclick="#" > Convert </button>
-          </div>
-
+         
         </div>
       </div>
     </div>
@@ -678,22 +676,25 @@ function swapOption() {
     const selectedA = listA.options[listA.selectedIndex];
     const selectedB = listB.options[listB.selectedIndex];
 
-    // If selection is in A → move to B
+    // If selected in A → move to B
     if (selectedA) {
-        listB.add(new Option(selectedA.text, selectedA.value));
+        const newOpt = new Option(selectedA.text, selectedA.value);
+        listB.add(newOpt);
         listA.remove(listA.selectedIndex);
         return;
     }
 
-    // If selection is in B → move to A
+    // If selected in B → move to A
     if (selectedB) {
-        listA.add(new Option(selectedB.text, selectedB.value));
+        const newOpt = new Option(selectedB.text, selectedB.value);
+        listA.add(newOpt);
         listB.remove(listB.selectedIndex);
         return;
     }
 
     alert("Please select an option in either list.");
 }
+
 </script>
   </body>
 </html>
