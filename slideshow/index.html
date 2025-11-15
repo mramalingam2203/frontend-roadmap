@@ -13,25 +13,42 @@
     <h2> Slide Show</h2>
     <div margin-left="auto" margin-right="auto">
         <img src = './img/battery.jpg' id = "slide" alt = "an image" display="block" margin-left="auto" margin-right="auto" width="50%"> </img>
-        <button> < </button>
-        <button> > </button>
+        <br>
+        <br>
+        <button onclick="prev()">Prev</button>
+        <button onclick="next()">Next</button>
     </div>
 </body>
 
 <script>
-const images = [
-"./img/battery.jpg","./img/electronics.jpg","./img/haemod.png","./img/hvac.png","./img/multiphase.png","./img/of.png", "./img/pollutant.jpeg",
-"./img/reactor.jpg","./img/turb.png", "visualz.jpg","./img/custom.jpg","./img/experiment.jpg",  "./img/hpc.png","./img/mesh.jpg","./img/muthu.png",
-"./img/parametrics.jpg",  "./img/processtank.png",  "./img/solar.jpg","./img/validate.png"]
-];
+  const images = [
+  "./img/battery.jpg","./img/electronics.jpg","./img/haemod.png","./img/hvac.png","./img/multiphase.png","./img/of.png", "./img/pollutant.jpeg",
+  "./img/reactor.jpg","./img/turb.png", "./img/visualz.jpg","./img/custom.jpg","./img/experiment.jpg",  "./img/hpc.png","./img/mesh.jpg","./img/muthu.png",
+  "./img/parametrics.jpg",  "./img/processtank.png",  "./img/solar.jpg","./img/validate.png"];
 
-let index = 0;
+  let index = 0;
 
-function changeImage() {
-  index = (index + 1) % images.length;  // loops back to 0
-  document.getElementById("slide").src = images[index];
-}
+  function changeImage() {
+    index = (index + 1) % images.length;  // loops back to 0
+    document.getElementById("slide").src = images[index];
+  }
 
-setInterval(changeImage, 2000); // change every 2 seconds
+  setInterval(changeImage, 4000); // change every 2 seconds
+
+
+  function show() {
+    document.getElementById("slide").src = images[index];
+  }
+
+  function prev() {
+    index = (index - 1 + images.length) % images.length;
+    show();
+  }
+
+  function next() {
+    index = (index + 1) % images.length;
+    show();
+  }
+
 </script>
 </html>
